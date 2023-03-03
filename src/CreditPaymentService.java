@@ -1,9 +1,8 @@
 public class CreditPaymentService {
-    public double calculate(double a, int b) {
-        double rate = ((a * (Math.pow(1 + a, b))) / ((Math.pow(1 + a, b)) - 1));
+    public double calculate(double percentRate, int payments) {
+        double Rate = ((percentRate * (Math.pow((1 + percentRate), payments))) / ((Math.pow(1 + percentRate, payments)) - 1));
 
-
-        return rate;
+        return Rate;
 
 
     }

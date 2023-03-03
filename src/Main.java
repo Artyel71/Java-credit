@@ -3,11 +3,11 @@ public class Main {
 
         CreditPaymentService service = new CreditPaymentService();
 
-        Double a = 9.99 / 12 / 100;
-        int b = 12;
+        Double percentRate = 9.99 / 12 / 100;
+        int payments = 12;
         int credit = 1_000_000;
-        double rate = service.calculate(a, b);
-        int payment = (int) (credit * rate);
+        double Rate = service.calculate(percentRate, payments);
+        int payment = (int) (credit * Rate);
         System.out.println(payment);
 
     }
